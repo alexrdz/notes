@@ -1,0 +1,88 @@
+﻿@using System.Linq
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Umbraco.Web;
+@{
+    var pages = Model.Content.Siblings()
+        .Where(p => p is Equitrust.Corp.Models.IContentBase || p is Equitrust.Corp.Models.RedirectedPage)
+        .Where(p => p.IsVisible());
+}
+@if (pages.Any())
+{
+    <nav class="navbar navbar-light bg-color-heisenberg-80 p-0 hidden-sm-down no-print subnavbar" role="navigation" aria-expanded="false">
+        <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center mx-auto" role="navigation" aria-expanded="false">
+            @foreach (var content in pages)
+            {
+                var rp = content as Equitrust.Corp.Models.RedirectedPage;
+                var url = rp != null ? rp.Redirect.Url : content.Url;
+                <li class="nav-item TopNavL">
+                    <a class="nav-link" href="@url">
+                        @content.Name<span class="sr-only"> (current)</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+}
+
+
+<nav class="row no-gutters second-navbar d-none no-print">
+    <div class="col">
+        <!--Source: /Views/Partials/second-navbar.cshtml-->
+        <!-- ABOUT SUB-NAV -->
+        <nav class="navbar navbar-light p-0 no-print" id="about_subnav" role="navigation" aria-expanded="false">
+            <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center mx-auto" role="navigation" aria-expanded="false">
+                <li class="nav-item">
+                    <a class="nav-link" id="companylink" href="/about/company/">
+                        Company
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="communitylink" href="/about/community/">
+                        Community
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="valueslink" href="/about/values/">
+                        Values
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="leadershiplink" href="/about/leadership/">
+                        Leadership
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- CAREERS SUB-NAV -->
+        <nav class="navbar navbar-light bg-color-heisenberg-80 p-0 display-none no-print" id="careers_subnav" role="navigation"
+             aria-expanded="false">
+            <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center mx-auto" role="navigation" aria-expanded="false">
+                <li class="nav-item TopNavL">
+                    <a class="nav-link" id="culturelink" href="/careers/culture/">
+                        Culture
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item TopNavL">
+                    <a class="nav-link" id="benefitslink" href="/careers/benefits/">
+                        Benefits
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item TopNavL">
+                    <a class="nav-link" id="opportunitieslink" href="/careers/opportunities/">
+                        Opportunities
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+    </div>
+</nav>
