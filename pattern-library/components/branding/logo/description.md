@@ -1,0 +1,1 @@
+The EquiTrust logo is provided in SVG format. This is a scalable vector format that allows us to stretch and shrink the logo without losing integrity or resolution. The logo should be applied directly in your markup when possible and can be resized with CSS classes. These classes can be applied to either it's parent container element or directly to the SVG.

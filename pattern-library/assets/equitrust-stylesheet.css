@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+
+/* Roboto Font */
+/*
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    src: local(Roboto-Thin), url("../fonts/Roboto-Thin.eot");
+    src: url("../fonts/Roboto-Thin.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Roboto-Thin.woff2") format("woff2"),
+         url("../fonts/Roboto-Thin.woff") format("woff"),
+         url("../fonts/Roboto-Thin.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: local(Roboto-Light), url("../fonts/Roboto-Light.eot");
+    src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Roboto-Light.woff2") format("woff2"),
+         url("../fonts/Roboto-Light.woff") format("woff"),
+         url("../fonts/Roboto-Light.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local(Roboto-Regular), url("../fonts/Roboto-Regular.eot");
+    src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Roboto-Regular.woff2") format("woff2"),
+         url("../fonts/Roboto-Regular.woff") format("woff"),
+         url("../fonts/Roboto-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: local(Roboto-Medium), url("../fonts/Roboto-Medium.eot");
+    src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Roboto-Medium.woff2") format("woff2"),
+         url("../fonts/Roboto-Medium.woff") format("woff"),
+         url("../fonts/Roboto-Medium.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local(Roboto-Bold), url("../fonts/Roboto-Bold.eot");
+    src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Roboto-Bold.woff2") format("woff2"),
+         url("../fonts/Roboto-Bold.woff") format("woff"),
+         url("../fonts/Roboto-Bold.ttf") format("truetype");
+  }
+  */
+
+
+
+/* Globals */
+
+body {
+  color: #22292f;
+  font-family: "Roboto", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
+}
+
+a {
+  color: #005ba7;
+  transition: color .3s ease-in-out;
+}
+a:hover {
+  color: #014f91;
+  text-decoration: none;
+}
+
+
+
+/* Custom Utilities */
+
+/* 
+** backgrounds 
+** ===========
+*/
+.bg-cover {
+  background-size: cover;
+}
+.bg-center {
+  background-position: center center;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+
+
+/* 
+** border
+** ===========
+*/
+.border-light {
+  border-color: #d1d3d4 !important;
+}
+.border-top {
+  border-top: 1px solid;
+}
+
+
+
+/* 
+** colors
+** ===========
+*/
+.color-black {
+  color: #22292f;
+}
+.color-white {
+  color: #fff;
+}
+.color-grey {
+  color: #d1d3d4;
+}
+.color-grey-light {
+  color: #efefef;
+}
+.color-grey-light-transparent {
+  color: rgba(239,239,239,.8);
+}
+.color-grey-lighter {
+  color: #f7f5f5;
+}
+.color-grey-dark {
+  color: #6d6e71;
+}
+.color-green {
+  color: #006A71;
+}
+.color-link {
+  color: #005ba7;
+}
+.color-success {
+  color: #50B948 !important;
+}
+.color-danger {
+  color: #FB3640 !important;
+}
+.color-warning {
+  color: #F0B310 !important;
+}
+.color-info {
+  color: #00AEC5 !important;
+}
+
+@media (min-width: 567px) {
+  .color-sm-white {
+    color: #fff;
+  }
+}
+
+
+
+.bg-color-black {
+  background-color: #22292f;
+}
+.bg-color-white {
+  background-color: #fff;
+}
+.bg-color-grey {
+  background-color: #d1d3d4;
+}
+.bg-color-grey-light {
+  background-color: #efefef;
+}
+.bg-success {
+  background-color: #50B948 !important;
+}
+.bg-danger {
+  background-color: #FB3640 !important;
+}
+.bg-warning {
+  background-color: #F0B310 !important;
+}
+.bg-info {
+  background-color: #00AEC5 !important;
+}
+
+.bg-color-grey-light-transparent {
+  background-color: rgba(226, 230, 230,.8);
+}
+@media (min-width: 567px) {
+  .bg-sm-color-grey-light-transparent {
+    background-color: rgba(226, 230, 230,.8);
+  }
+}
+
+
+.bg-color-grey-lighter {
+  background-color: #f7f5f5;
+}
+.bg-color-grey-dark {
+  background-color: #6d6e71;
+}
+.bg-color-green {
+  background-color: #007278;
+}
+
+
+
+/* 
+** font weight
+** ===========
+*/
+.font-hairline {
+  font-weight: 100;
+}
+.font-thin {
+  font-weight: 200;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-black {
+  font-weight: 900;
+}
+
+
+/* 
+** height 
+** ===========
+*/
+.h-3125 {
+  height: 3.125rem;
+}
+.h-64 {
+  height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .h-md-400 {
+    height: 400px;
+  }
+}
+@media (min-width: 576px) {
+  .h-sm-400 {
+    height: 400px;
+  }
+}
+
+
+/* 
+** overflow
+** ===========
+*/
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+
+/* 
+** padding
+** ===========
+*/
+.pt-16 {
+  padding-top: 4.5rem;
+}
+
+
+
+/* 
+** position
+** ===========
+*/
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.relative {
+  position: relative;
+}
+
+@media (min-width: 567px) {
+  .absolute-sm {
+    position: absolute;
+  }
+}
+
+
+
+/* 
+** shadow
+** ===========
+*/
+.shadow-1 {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+.shadow-2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+.shadow-3 {
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+}
+.shadow-inner {
+  box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.06);
+}
+.shadow-none {
+  box-shadow: none;
+}
+
+@media (min-width: 567px) {
+  .shadow-sm-2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+  }
+}
+
+
+
+/* 
+** svg
+** ===========
+*/
+.fill-current {
+  fill: currentColor;
+}
+
+
+
+
+/* 
+** text size 
+** ===========
+*/
+.text-xs {
+  font-size: .75rem;
+}
+.text-sm {
+  font-size: .875rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+}
+.text-3xl {
+  font-size: 1.875re;
+}
+.text-4xl {
+  font-size: 2.25rem;
+}
+.text-5xl {
+  font-size: 3rem;
+}
+
+
+/* 
+** width 
+** ===========
+*/
+@media (min-width: 768px) {
+  .w-md-25 {
+    width: 25% !important;
+  }
+}
+
+
+/* 
+---------------------------------------------- End Custom Utilities */
+
+
+
+
+
+
+/* Custom Styles */
+
+/* 
+** buttons
+** ===========
+*/
+.btn {
+  width: 100%;
+}
+.btn:active,
+.btn:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.btn-primary {
+  background-color: #007278;
+  border-color: #007278;
+  max-width: 250px;
+}
+.btn-primary:focus, 
+.btn-primary:hover {
+  background-color: #008781;
+  border-color: #008781;
+}
+.btn-primary:hover:active {
+  background-color: #045451;
+  border-color: #045451;
+}
+.btn-primary.active, 
+.btn-primary:active {
+  background-color: #045451;
+  border-color: #045451;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  border-color: #007278;
+  color: #007278;
+  max-width: 300px;
+}
+.btn-secondary:focus, 
+.btn-secondary:hover {
+  color: #007278;
+  background-color: #f4f4f4;
+}
+.btn-secondary.active, 
+.btn-secondary:active {
+  background-color: #cfcfce;
+  border-color: #007278;
+}
+.btn-secondary:hover:active {
+  color: #007278;
+  background-color: #cfcfce;
+}
+
+.btn-default {
+  background-color: #007278;
+  border-color: #007278;
+  color: #efefef;
+  width: auto;
+}
+
+
+
+/* 
+** site header
+** ===========
+*/
+.site-header {
+  min-height: 275px;
+}
+
+/* 
+** site navigation
+** ===========
+*/
+.navbar-desktop {
+  min-height: 4rem;
+  transition: background-color .5s;
+}
+
+.off-canvas-nav {
+  left: 105%;
+  top: 0;
+  transition: all .3s ease-in-out;
+  z-index: 1050;
+}
+.show-nav {
+  left: 25%;
+}
+
+.secondary-navbar {
+  bottom: 0;
+}
+
+
+/* 
+** miscellaneous
+** ===========
+*/
+.close-button {
+  cursor: pointer;
+}
+
+
+
+/* 
+** site-footer
+** ===========
+*/
+.site-footer li {
+  line-height: 1.8;
+}
+
+/* 
+---------------------------------------------- End Custom Styles */
+
+
+
+
+
+
+
+
+/* 
+** bootstrap overrides
+** ===========
+*/
+.navbar-toggler {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 650px;
+  }
+}

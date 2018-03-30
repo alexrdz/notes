@@ -1,0 +1,1 @@
+Default Buttons for Equitrust Web Sites and Apps based on existing style guide. Slight modifications made to allow for easier and cleaner markup. 

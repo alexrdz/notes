@@ -1,0 +1,1 @@
+The EquiTrust logo with a half width class, `.w-50` attached to the SVG file directly. This makes the logo half the width of it's container, or parent, element. The height is adjusted automatically to retain proper proprtion. Other available widths are `.w-25` and `.w-75`.

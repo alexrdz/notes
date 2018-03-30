@@ -1,0 +1,257 @@
+{
+    "project_logo": null,
+    "project_favicon": "favicon.png",
+    "project_name": "EquiTrust",
+    "project_url": null,
+    "copyright_start_year": 2018,
+    "client_name": "EquiTrust",
+    "client_url": "https://www.equitrust.com",
+    "creators": [
+        {
+            "name": "Alex Rodriguez",
+            "url": "https://www.equitrust.com"
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#00585C",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "UI Components and Pattern Library",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": [
+            "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css",
+            "./assets/equitrust-stylesheet.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "branding",
+            "title": "Branding",
+            "components": [
+                {
+                    "group": "branding",
+                    "name": "logo",
+                    "title": "Equitrust Logo",
+                    "width": "half"
+                },
+                {
+                    "group": "branding",
+                    "name": "logo-half",
+                    "title": "EquiTrust Logo Half Width",
+                    "width": "half"
+                },
+                {
+                    "group": "branding",
+                    "name": "color-palette",
+                    "title": "Color Palette",
+                    "type": "colors",
+                    "colors": [
+                        "#22292f",
+                        "#fff",
+                        "#d1d3d4",
+                        "#efefef",
+                        "#f7f5f5",
+                        "#6d6e71",
+                        "#006A71",
+                        "#FB3640",
+                        "#F0B310",
+                        "#50B948",
+                        "#00AEC5"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "typography",
+            "title": "Typography",
+            "components": [
+                {
+                    "group": "typography",
+                    "name": "headers",
+                    "title": "Content Headers",
+                    "width": "half"
+                },
+                {
+                    "group": "typography",
+                    "name": "body",
+                    "title": "Body Content",
+                    "width": "half"
+                },
+                {
+                    "group": "typography",
+                    "name": "unorderedLists",
+                    "title": "Unordered Lists",
+                    "width": "half"
+                },
+                {
+                    "group": "typography",
+                    "name": "unstyledLists",
+                    "title": "Unstyled Lists",
+                    "width": "half"
+                },
+                {
+                    "group": "typography",
+                    "name": "textColors",
+                    "title": "Text Colors",
+                    "width": "half"
+                },
+                {
+                    "group": "typography",
+                    "name": "textColorsDark",
+                    "title": "Text Colors - Dark Background",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "buttons",
+            "title": "Buttons",
+            "components": [
+                {
+                    "group": "buttons",
+                    "name": "default",
+                    "title": "Button Primary",
+                    "width": "half"
+                },
+                {
+                    "group": "buttons",
+                    "name": "secondary",
+                    "title": "Button Secondary",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "icons",
+            "title": "Icons",
+            "components": [
+                {
+                    "group": "icons",
+                    "name": "accumulations",
+                    "title": "Accumulations Icon",
+                    "width": "half"
+                },
+                {
+                    "group": "icons",
+                    "name": "income",
+                    "title": "Income Icon",
+                    "width": "half"
+                },
+                {
+                    "group": "icons",
+                    "name": "wealthTransfer",
+                    "title": "Wealth Trasnfer Icon",
+                    "width": "half"
+                },
+                {
+                    "group": "icons",
+                    "name": "heart",
+                    "title": "Heart Icon",
+                    "width": "half"
+                },
+                {
+                    "group": "icons",
+                    "name": "arrows",
+                    "title": "Arrow Icons"
+                }
+            ]
+        },
+        {
+            "name": "inputs",
+            "title": "Inputs",
+            "components": [
+                {
+                    "group": "inputs",
+                    "name": "textInputs",
+                    "title": "Text Inputs",
+                    "width": "half"
+                },
+                {
+                    "group": "inputs",
+                    "name": "textAreas",
+                    "title": "Text Text Areas",
+                    "width": "half"
+                },
+                {
+                    "group": "inputs",
+                    "name": "radios",
+                    "title": "Radios",
+                    "width": "half"
+                },
+                {
+                    "group": "inputs",
+                    "name": "checkBoxes",
+                    "title": "Check Boxes",
+                    "width": "half"
+                },
+                {
+                    "group": "inputs",
+                    "name": "select",
+                    "title": "Select",
+                    "width": "half"
+                },
+                {
+                    "group": "inputs",
+                    "name": "buttons",
+                    "title": "Default Button",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "blocks",
+            "title": "Blocks",
+            "components": [
+                {
+                    "group": "blocks",
+                    "name": "nav",
+                    "title": "Primary Navigation"
+                }
+            ]
+        },
+        {
+            "name": "modules",
+            "title": "Modules",
+            "components": [
+                {
+                    "group": "modules",
+                    "name": "fixedPrimaryNavbar",
+                    "title": "Fixed Primary Navbar"
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}

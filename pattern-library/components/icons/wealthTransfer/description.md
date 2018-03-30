@@ -1,0 +1,1 @@
+Wealth Transfer Icon

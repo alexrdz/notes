@@ -1,0 +1,1 @@
+EquiTrust font for Web and Web Apps is Roboto.

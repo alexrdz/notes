@@ -1,0 +1,1 @@
+Default buttons for forms follow the standard Bootstrap default buttons with the addition of the Equitrust green background color.
